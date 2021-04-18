@@ -1,11 +1,11 @@
 let mongoose = require("mongoose");
 let db = require("../models");
-const path = require('path')
-require('dotenv').config('.env');
+require('dotenv').config();
 
 mongoose.connect("mongodb://localhost/workout", {
   useNewUrlParser: true,
-  useFindAndModify: false
+  useFindAndModify: false,
+  useUnifiedTopology: true
 });
 
 let workoutSeed = [

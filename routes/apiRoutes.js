@@ -23,7 +23,7 @@ app.get("/api/workouts/range", function(req, res) {
         res.json(err);
       });
   });
-};
+
 
 // Creating new workouts
 router.post("/api/workouts", (req, res) => {

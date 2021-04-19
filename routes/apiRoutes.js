@@ -14,7 +14,7 @@ router.get("/api/workouts", (req, res) => {
     
 });
 
-app.get("/api/workouts/range", function(req, res) {
+router.get("/api/workouts/range", function(req, res) {
     db.Workout.find({})
       .then(dbWorkout => {
         res.json(dbWorkout);
